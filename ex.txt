@@ -1,2 +1,0 @@
-This file is to do practise of revert,restore and reset.
-changed
