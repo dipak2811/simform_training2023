@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #2874f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.plus-clr {
+    color: #ffe11b;
+    font-weight: 900;
+}
+
+.logo p {
+    color: white;
+    position: relative;
+    top: -5px;
+}
+
+.search {
+    background-color: white;
+    padding: 7px;
+    width: 540px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #2874f0;
+    border-radius: 2px;
+    height: 20px;
+}
+
+.search input {
+    width: 380px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    box-shadow: -7px -7px 1 rgba(0, 0, 0, 0.1),
+        7px 7px 1 rgba(0, 0, 0, 0.1);
+}
+.lgbtn {
+    width: 122px;
+    padding: 5px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2874f0;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin-left: 180px;
+    border: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.nav-item1 {
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    font-weight: 600;
+}
+.mulitple-section{
+    display: flex;
+    justify-content: space-between;
+}
+.section-1 {
+    width: 100%;
+    height: 112px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+.section-1-container{
+    width: 1280px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.section-1-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-1-item img {
+    width: 64px;
+    height: 64px;
+}
+
+/* section 3 */
+.section-3-container {
+    margin-top: 8px;
+    height: 50px;
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    margin-left: 110px;
+    display: flex;
+    margin-right: 110px;
+}
+#deal-text{
+    padding-top: 10px;
+    padding-bottom:  10px;
+    padding-left:  30px;
+}
+#stwatch{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+#viall{
+    margin-left: 1200px;
+    height: 40px;
+    background-color: #2874f0;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#tt{
+    font-family: "Times New Roman", Times, serif;
+    opacity: 0.6;
+    padding-top: 18px;
+    padding-bottom:  13px;
+    padding-left:  5px;
+}
+/* section 4 */
+.section-4-container {
+    height: 100%;
+    margin-top: 8px;
+    margin-left: 110px;
+    margin-right: 110px;
+    height: 362px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-4-offers {
+    width: 230px;
+    height: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.section-4-offers-viewall{
+    margin-top: 132px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-4-list {
+    height: 100%;
+    width: calc(100% - 230px);
+    display: flex;
+    overflow-x: auto;
+}
+.section-4-item{
+    width: 232px;
+    height: 100%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-4-item img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.section-4-item-head{
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-4-item-price {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #388e3c;
+}
+.section-4-item-explore{
+    opacity: 0.6;
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.section-6-container {
+    margin-top: 10px;
+    height: 80px;
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    margin-left: 110px;
+    display: flex;
+    margin-right: 110px;
+}
+#bi-text{
+    padding-top: 15px;
+    padding-bottom:  15px;
+    padding-left:  30px;
+}
+#viall-bi{
+    margin-left: 1200px;
+    height: 40px;
+    background-color: #2874f0;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.section-5 img {
+    width: 33%;
+}
