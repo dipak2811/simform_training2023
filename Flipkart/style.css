@@ -1,6 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    
+}
+
+body{
+    background-color: #f1f3f6;
 }
 
 nav {
@@ -8,9 +13,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px;
+    padding-top: 10px;
 }
-
+.section3-4-5
+{
+    margin: 0 100px;
+}
 .plus-clr {
     color: #ffe11b;
     font-weight: 900;
@@ -31,7 +39,6 @@ nav {
     justify-content: space-between;
     color: #2874f0;
     border-radius: 2px;
-    height: 20px;
 }
 
 .search input {
@@ -88,14 +95,13 @@ nav {
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
 }
 .section-1-container{
-    width: 1280px;
     margin: auto;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
+    background-color: white;
+    padding: 0 312px;
 }
 .section-1-item{
     height: 100%;
@@ -112,16 +118,14 @@ nav {
     height: 64px;
 }
 
-/* section 3 */
 .section-3-container {
     margin-top: 8px;
     height: 50px;
     background-size: cover;
     background-color: white;
     background-position: center;
-    margin-left: 110px;
     display: flex;
-    margin-right: 110px;
+    font-family: Roboto,Arial,sans-serif;
 }
 #deal-text{
     padding-top: 10px;
@@ -133,7 +137,7 @@ nav {
     margin-bottom: 0px;
 }
 #viall{
-    margin-left: 1200px;
+    margin-left: 1050px;
     height: 40px;
     background-color: #2874f0;
     color: white;
@@ -153,18 +157,28 @@ nav {
     padding-bottom:  13px;
     padding-left:  5px;
 }
-/* section 4 */
-.section-4-container {
+.section-7{
     height: 100%;
     margin-top: 8px;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 100px;
+    margin-right: 100px;
     height: 362px;
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.section-4-container {
+    height: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 362px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .section-4-offers {
     width: 230px;
     height: 100%;
@@ -182,7 +196,6 @@ nav {
 
 .section-4-list {
     height: 100%;
-    width: calc(100% - 230px);
     display: flex;
     overflow-x: auto;
 }
@@ -217,13 +230,13 @@ nav {
 }
 .section-6-container {
     margin-top: 10px;
-    height: 80px;
+    height: 90px;
     background-size: cover;
     background-color: white;
     background-position: center;
-    margin-left: 110px;
+    font-family: Roboto,Arial,sans-serif;
+    margin: 0 100px;
     display: flex;
-    margin-right: 110px;
 }
 #bi-text{
     padding-top: 15px;
@@ -231,7 +244,7 @@ nav {
     padding-left:  30px;
 }
 #viall-bi{
-    margin-left: 1200px;
+    margin-left: 1000px;
     height: 40px;
     background-color: #2874f0;
     color: white;
@@ -244,6 +257,88 @@ nav {
     border-radius: 2px;
     cursor: pointer;
 }
-.section-5 img {
-    width: 33%;
+
+
+
+.more_link{
+    font-weight: 550;
+    padding:0px 15px;
+    font-size: 15px;
+    color:white;
+    cursor: pointer;
+    margin: 0 10px;
+    position: relative;
 }
+.icon_more{
+    font-size: 10px;
+    transition: transform 0.5s;
+}
+.more_link:hover .icon_more{
+    transform: rotate(-180deg);
+}
+.more_menu{
+    position: absolute;
+    height:220px;
+    width:200px;
+    content: "";
+    left: 47px;
+    background-color: transparent;
+    transform: translateX(-35%);  
+    padding-top:10px;
+    display: none;
+   z-index: 12;
+}
+.more_link:hover .more_menu{
+    display: block;
+}
+.more_menu::before{
+    position: absolute;
+    content: "";
+    margin-left: 95px;
+    top:1px;
+    border-top:0px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid white; 
+}
+.more_menu_list{
+    background-color: white;
+    height: 100%;
+    box-shadow: -5px -0px 5px rgba(0,0,0,0.1),
+    5px 5px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.more_menu_list a{
+    display: flex;
+    font-size: 14px;
+}
+.more_menu_list i{
+    color: #2874f0;
+}
+.more_menu_list p{
+    color:#474545;
+    padding-left: 10px;
+    white-space: nowrap;
+    font-weight: 500 ;
+}
+
+#section-1-a .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+#section-1-a .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  #section-1-a .dropdown:hover .dropdown-content {
+    display: block;
+  }
