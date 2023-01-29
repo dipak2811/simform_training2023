@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculater</title>
+</head>
+
+<body>
+    <div class="container mainclass">
+        <div class="row">
+            <div class="col-5 d-flex flex-column justify-content-center aling-items-center">
+                <input type="text" name="display" id="display"
+                    style="text-align: end; font-size: xx-large; font-weight: bold;background-color: white;margin-top: 10px;margin-bottom: 4px;"
+                    disabled>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5 d-flex">
+                <div class="button"><button id="degree" OnClick="rad()">DEG</button></div>
+                <div class="button"><button id="fe-button" OnClick="FE();fecolor()">F-E</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 d-flex aling-item-center position-relative">
+                <div class="button" OnClick="mc()"><button id="mc" disabled>MC</button></div>
+                <div class="button" OnClick="mr()"><button id="mr" disabled>MR</button></div>
+                <div class="button" OnClick="mplus()"><button>M+</button></div>
+                <div class="button" OnClick="mminus()"><button>M-</button></div>
+                <div class="button" OnClick="ms()"><button>MS</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 d-flex aling-item-center">
+                <div class="trigonometry">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><span
+                                style="font-size: large;font-weight: bold;">&#x25FF;&nbsp;&nbsp;</span><span>Trigonometry&nbsp;<i
+                                    class="fa-solid fa-chevron-down"></i></span></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="trigonometry1" id="trigonometry1">
+                                <div class="d-flex">
+                                    <button OnClick="trigonometry2nd()" class="tribtn2nd">2<sup>nd</sup></button>
+                                    <button OnClick="sin()">sin</button>
+                                    <button OnClick="cos()">cos</button>
+                                    <button OnClick="tan()">tan</button>
+                                </div>
+                                <div class="d-flex">
+                                    <button OnClick="trigonometry3rd()" class="hypbtn2nd">hyp</button>
+                                    <button OnClick="sec()">sec</button>
+                                    <button OnClick="csc()">csc</button>
+                                    <button OnClick="cot()">cot</button>
+                                </div>
+                            </div>
+                            <div class="trigonometry2" id="trigonometry2">
+                                <div class="d-flex">
+                                    <button OnClick="trigonometry2nd()" class="tribtn2nd">2<sup>nd</sup></button>
+                                    <button OnClick="asin()">sin<sup>-1</sup></button>
+                                    <button OnClick="acos()">cos<sup>-1</sup></button>
+                                    <button OnClick="atan()">tan<sup>-1</sup></button>
+                                </div>
+                                <div class="d-flex">
+                                    <button OnClick="trigonometry3rd()" class="hypbtn2nd">hyp</button>
+                                    <button OnClick="asec()">sec<sup>-1</sup></button>
+                                    <button OnClick="acsc()">csc<sup>-1</sup></button>
+                                    <button OnClick="acot()">cot<sup>-1</sup></button>
+                                </div>
+                            </div>
+                            <div class="trigonometry3" id="trigonometry3">
+                                <div class="d-flex">
+                                    <button OnClick="trigonometry2nd()" class="tribtn2nd">2<sup>nd</sup></button>
+                                    <button OnClick="sinh()">sinh</button>
+                                    <button OnClick="cosh()">cosh</button>
+                                    <button OnClick="tanh()">tanh</button>
+                                </div>
+                                <div class="d-flex">
+                                    <button OnClick="trigonometry3rd()"  class="hypbtn2nd">hyp</button>
+                                    <button OnClick="sech()">sech</button>
+                                    <button OnClick="csch()">csch</button>
+                                    <button OnClick="cot()">coth</button>
+                                </div>
+                            </div>
+                            <div class="trigonometry4" id="trigonometry4">
+                                <div class="d-flex">
+                                    <button OnClick="trigonometry2nd()" class="tribtn2nd">2<sup>nd</sup></button>
+                                    <button OnClick="asinh()">sinh<sup>-1</sup></button>
+                                    <button OnClick="acosh()">cosh<sup>-1</sup></button>
+                                    <button OnClick="atanh()">tanh<sup>-1</sup></button>
+                                </div>
+                                <div class="d-flex">
+                                    <button OnClick="trigonometry3rd()" class="hypbtn2nd">hyp</button>
+                                    <button OnClick="asec()">sech<sup>-1</sup></button>
+                                    <button OnClick="acsc()">csch<sup>-1</sup></button>
+                                    <button OnClick="acot()">coth<sup>-1</sup></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="functions">
+                    <div class="dropdown">
+                        <button onclick="myFunction1()" class="dropbtn">
+                                <span style="font-size: large;font-weight: bold;">
+                                    &#402;</span>&nbsp;&nbsp;Functions&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                        </button>
+                        <div id="myDropdown1" class="dropdown-content">
+                            <div>
+                                <div class="d-flex">
+                                    <button OnClick="modx()">&#8739;x&#8739;</button>
+                                    <button onclick="floor()">&LeftFloor;x&RightFloor;</button>
+                                    <button onclick="ceil()">&LeftCeiling;x&RightCeiling;</button>
+                                </div>
+                                <div class="d-flex">
+                                    <button OnClick="rand()">rand</button>
+                                    <button onClick="degtodms()"><i class="fa-solid fa-arrow-right"></i>dms</button>
+                                    <button OnClick="dmstodeg()"><i class="fa-solid fa-arrow-right"></i>deg</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 d-flex aling-item-center">
+                <div class="button"><button OnClick="function2nd(); fcolor()" id="s-button">2<sup>nd</sup></button>
+                </div>
+                <div class="button"><button OnClick="pivalue()">&#x3C0;</button></div>
+                <div class="button"><button OnClick="epsilon()">e</button></div>
+                <div class="button"><button OnClick="remv()">CE</button></div>
+                <div class="button"><button OnClick="backspc()"><img src="clear.png" width="33%" height="50%"></button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 d-flex aling-item-center">
+                <div class="button show1" OnClick="square()"><button>x<sup>2</sup></button></div>
+                <div class="button show2" OnClick="cubed()"><button>x<sup>3</sup></button></div>
+                <div class="button"><button OnClick="onebyx()"><sup>1</sup>&#8725;<sub>x</sub></button></div>
+                <div class="button"><button OnClick="modx()">&#8739;x&#8739;</button></div>
+                <div class="button"><button OnClick="exp(value)" value=".e+">exp</button></div>
+                <div class="button"><button OnClick="element(value)" value="%">mod</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 d-flex aling-item-center">
+                <div class="button show1"><button OnClick="sqrt2()">&#8730;x</button></div>
+                <div class="button show2"><button OnClick="sqrt3()"><sup>3</sup>&#8730;x</button></div>
+                <div class="button"><button OnClick="element(value)" value="(">&#40;</button></div>
+                <div class="button"><button OnClick="element(value)" value=")">&#41;</button></div>
+                <div class="button"><button OnClick="factorial()">n!</button></div>
+                <div class="button"><button OnClick="element(value)" value="/">&#247;</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 d-flex aling-item-center">
+                <div class="button show1"><button OnClick="element(value)" value="^">x<sup>y</sup></button></div>
+                <div class="button show2"><button OnClick="element(value)" value="yroot"><sup>y</sup>&#8730;x</button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value="7">7</button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value="8">8</button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value="9">9</button></div>
+                <div class="button"><button OnClick="element(value)" value="*">&#215;</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex">
+                <div class="button show1"><button OnClick="tenpow()">10<sup>x</sup></button></div>
+                <div class="button show2"><button OnClick="twopow()">2<sup>x</sup></button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value="4">4</button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value="5">5</button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value="6">6</button></div>
+                <div class="button"><button OnClick="element(value)" value="-" style="font-size: xx-large;">-</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 d-flex aling-item-center">
+                <div class="button show1"><button OnClick="log()">log</button></div>
+                <div class="button show2"><button OnClick="element(value)" value="ylog">log<sub>y</sub>x</button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value="1">1</button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value="2">2</button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value="3">3</button></div>
+                <div class="button"><button OnClick="element(value)" value="+">+</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 d-flex aling-item-center" style="margin-bottom: 10px;">
+                <div class="button show1"><button OnClick="ln()">ln</button></div>
+                <div class="button show2"><button OnClick="eresx()">e<sup>x</sup></button></div>
+                <div class="button wbtn"><button OnClick="signalt()"><sup>+</sup>/<sub>-</sub></button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value="0">0</button></div>
+                <div class="button wbtn"><button OnClick="element(value)" value=".">.</button></div>
+                <div class="button"><button OnClick="equal()">=</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
