@@ -5,6 +5,8 @@ Steps to Run Single Page application:-
     git clone https://github.com/dipak2811/simform_training2023.git
 
     cd simform_training2023
+    
+    cd Single-Page-Application-Using-Router 
 
     git checkout Single-Page-Application-Using-Router
 
