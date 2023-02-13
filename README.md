@@ -5,6 +5,8 @@ Steps to Run CRUD project:-
       git clone https://github.com/dipak2811/simform_training2023.git
 
       cd simform_training2023
+      
+      cd CRUD
 
       git checkout CRUD
 
