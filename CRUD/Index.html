@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="Index.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h2>PRODUCTS</h2>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <label class="col-md-6 col-sm-12  col-sm-12 control-label" for="product_name">PRODUCT NAME</label>
+            <div class="col-md-6 col-sm-12" >
+                <input id="product_name" name="product_name" placeholder="PRODUCT NAME" class="form-control input-md"
+                    type="text">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <label class="col-md-6 col-sm-12  control-label" for="product_categorie">PRODUCT PRICE</label>
+            <div class="col-md-6 col-sm-12" >
+                <input id="product_price" name="product_price" placeholder="PRODUCT PRICE" class="form-control input-md" type="text">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <label class="col-md-6 col-sm-12  control-label" for="product_description">PRODUCT DESCRIPTION</label>
+            <div class="col-md-6 col-sm-12" >
+                <textarea class="form-control" id="product_description" name="product_description" placeholder="PRODUCT DESCRIPTION"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <label class="col-md-6 col-sm-12  control-label" for="filebutton">PRODUCT IMAGE</label>
+            <div class="col-md-6">
+                <input id="product_image" name="product_image" class="input-file" type="file" accept="image/*">
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <button id="singlebutton" name="singlebutton" class="btn btn-success float-end" onclick="submitproduct()">Submit</button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <button id="singlebutton1" name="singlebutton1" class="btn btn-success float-end" onclick="Update_data()">Update</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <input type="text" placeholder="Search Product By Name" class="col-md-9 col-sm-12" id="search_value">&nbsp;
+        <button class="btn btn-primary" onclick="search_item()" id="bt1" class="col-md-1 col-sm-4">Search</button>
+        <button class="btn btn-danger" onclick="clear_search()" id="bt2" class="col-md-1">&nbsp;Clear</button>
+        <button class="btn btn-primary" onclick="sortascending();" class="col-md-1 col-sm-4"><strong>↓</strong>&nbsp;Price</button>
+        <button class="btn btn-primary" onclick="sortdescending();" class="col-md-1 col-sm-4"><strong>↑</strong>&nbsp;Price</button>
+    </div>
+    <br>
+    <br>
+    <div class="container product-list">
+        <table class="table table-dark table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Product Id</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Product Price</th>
+                    <th scope="col">Product Description</th>
+                    <th scope="col">Product Image</th>
+                    <th scope="col">Product Delete</th>
+                    <th scope="col">Product Update</th>
+                </tr>
+            </thead>
+            <tbody id="product_table">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
