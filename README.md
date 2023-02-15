@@ -11,11 +11,14 @@ Steps to Run CRUD project:-
 
 2) Then open Index.js from js files in vs-code and open it with live server.After Adding items it will show as per below photos
 
-![Screenshot from 2023-02-15 11-59-01](https://user-images.githubusercontent.com/77386172/218950138-a56f396e-7c1e-45e6-89ae-9f9835ccb22b.png)
-![Screenshot from 2023-02-15 11-59-11](https://user-images.githubusercontent.com/77386172/218950144-c30c04de-6590-4559-b61f-77f6009007a1.png)
-![Screenshot from 2023-02-15 12-02-38](https://user-images.githubusercontent.com/77386172/218950556-f8d7747a-b15b-4bab-a1fb-29db1bdd0087.png)
-![Screenshot from 2023-02-15 12-02-55](https://user-images.githubusercontent.com/77386172/218950559-b22b6fb7-9946-4132-b54f-c89ad8e1ad30.png)
-![Screenshot from 2023-02-15 12-03-18](https://user-images.githubusercontent.com/77386172/218950567-e8c7a9c1-1c22-47fe-9828-3171eec58f13.png)
+![Screenshot from 2023-02-15 15-15-32](https://user-images.githubusercontent.com/77386172/218992814-16a55c61-28e5-4aae-9aa8-9e1fb6799944.png)
+![Screenshot from 2023-02-15 15-16-59](https://user-images.githubusercontent.com/77386172/218992833-3c24f052-b409-4d83-9d48-fff60da042e6.png)
+![Screenshot from 2023-02-15 15-17-07](https://user-images.githubusercontent.com/77386172/218992845-4ee74801-29c0-44a0-a4ec-1ae2972db8d4.png)
+![Screenshot from 2023-02-15 15-17-20](https://user-images.githubusercontent.com/77386172/218992855-85fdd45b-41fe-4299-8475-b2df5bfab97e.png)
+![Screenshot from 2023-02-15 15-17-40](https://user-images.githubusercontent.com/77386172/218992867-3beba80c-1919-403b-b073-d4927425efd8.png)
+![Screenshot from 2023-02-15 15-18-01](https://user-images.githubusercontent.com/77386172/218992873-94729763-d682-49a9-b813-abaad27a973c.png)
+![Screenshot from 2023-02-15 15-18-13](https://user-images.githubusercontent.com/77386172/218992876-d5eb6cfc-aed0-4b0e-8e25-df0a91489795.png)
 
 
 Demo Link:- https://dipak2811.github.io/CRUD/Index.html
+
