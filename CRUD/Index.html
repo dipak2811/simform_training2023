@@ -61,11 +61,18 @@
     </div>
     <br>
     <div class="container">
-        <input type="text" placeholder="Search Product By Name" class="col-md-9 col-sm-12" id="search_value">&nbsp;
-        <button class="btn btn-primary" onclick="search_item()" id="bt1" class="col-md-1 col-sm-4">Search</button>
-        <button class="btn btn-danger" onclick="clear_search()" id="bt2" class="col-md-1">&nbsp;Clear</button>
-        <button class="btn btn-primary" onclick="sortascending();" class="col-md-1 col-sm-4"><strong>↓</strong>&nbsp;Price</button>
-        <button class="btn btn-primary" onclick="sortdescending();" class="col-md-1 col-sm-4"><strong>↑</strong>&nbsp;Price</button>
+        <input type="text" placeholder="Search Product By Name" class="col-10 col-md-9 col-sm-12" id="search_value">&nbsp;
+        <button class="btn btn-primary" onclick="search_item()" id="bt1" class="col-2 col-md-3 col-sm-4">Search</button>
+        <button class="btn btn-danger" onclick="clear_search()" id="bt2" class="col-md-3 col-sm-4">&nbsp;Clear</button>
+    </div>
+    <br>
+    <div class="container">
+        <button class="btn btn-primary" onclick="sortascendingbyprice();" class="col-2 col-md-4 col-sm-6"><strong>↓</strong>&nbsp;Price</button>
+        <button class="btn btn-primary" onclick="sortdescendingbyprice();" class="col-2 col-md-4 col-sm-6"><strong>↑</strong>&nbsp;Price</button>
+        <button class="btn btn-primary" onclick="sortascendingbyid();" class="col-2 col-md-4 col-sm-6"><strong>↓</strong>&nbsp;Product Id</button>
+        <button class="btn btn-primary" onclick="sortdescendingbyid();" class="col-2 col-md-4 col-sm-6"><strong>↑</strong>&nbsp;Product Id</button>
+        <button class="btn btn-primary" onclick="sortascendingbyname();" class="col-2 col-md-4 col-sm-6"><strong>↓</strong>&nbsp;Product Name</button>
+        <button class="btn btn-primary" onclick="sortdescendingbyname();" class="col-2 col-md-4 col-sm-6"><strong>↑</strong>&nbsp;Product Name</button>
     </div>
     <br>
     <br>
