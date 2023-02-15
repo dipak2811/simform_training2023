@@ -39,6 +39,11 @@ let submitproduct = () => {
     const product_image = document.querySelector('#product_image').files[0];
     let product = {};
     let flag = validate(product_name, product_price, product_description);
+    if(typeof(product_image))
+    {
+        alert("Image is  required!!")
+        flag=false;
+    }
     if (!isvalid(product_name)) {
         alert("Product Already Exists");
         document.getElementById('product_name').value = "";
