@@ -8,7 +8,7 @@ Steps to Run Single Page application:-
     
     cd Single-Page-Application-Using-Router 
 
-    git checkout Single-Page-Application-Using-Router
+    git checkout -b Single-Page-Application-Using-Router
 
 2) Then open Home.js from js files in vs-code and open it with live server.It will show as per below photos
 
