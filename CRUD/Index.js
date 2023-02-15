@@ -217,7 +217,7 @@ clear_search = () => {
     showdata();
 }
 
-function sortascending() {
+function sortascendingbyprice() {
     let productlist;
     if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
         productlist = JSON.parse(localStorage.getItem('Allproduct'));
@@ -236,7 +236,8 @@ function sortascending() {
     }
     showdata();
 }
-function sortdescending() {
+
+function sortdescendingbyprice() {
     let productlist;
     if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
         productlist = JSON.parse(localStorage.getItem('Allproduct'));
@@ -246,6 +247,87 @@ function sortdescending() {
     }
     productlist.sort((a, b) => {
         return b.product_price - a.product_price;
+    });
+    if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
+        localStorage.setItem('Allproduct', JSON.stringify(productlist));
+    }
+    else if (localStorage.getItem('flag-search') == 1) {
+        localStorage.setItem('Sortedproduct', JSON.stringify(productlist));
+    }
+    showdata();
+}
+
+function sortascendingbyid() {
+    let productlist;
+    if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
+        productlist = JSON.parse(localStorage.getItem('Allproduct'));
+    }
+    else if (localStorage.getItem('flag-search') == 1) {
+        productlist = JSON.parse(localStorage.getItem('Sortedproduct'));
+    }
+    productlist.sort((a, b) => {
+        return a.product_id - b.product_id;
+    });
+    if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
+        localStorage.setItem('Allproduct', JSON.stringify(productlist));
+    }
+    else if (localStorage.getItem('flag-search') == 1) {
+        localStorage.setItem('Sortedproduct', JSON.stringify(productlist));
+    }
+    showdata();
+}
+
+function sortdescendingbyid() {
+    let productlist;
+    if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
+        productlist = JSON.parse(localStorage.getItem('Allproduct'));
+    }
+    else if (localStorage.getItem('flag-search') == 1) {
+        productlist = JSON.parse(localStorage.getItem('Sortedproduct'));
+    }
+    productlist.sort((a, b) => {
+        return b.product_id - a.product_id;
+    });
+    if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
+        localStorage.setItem('Allproduct', JSON.stringify(productlist));
+    }
+    else if (localStorage.getItem('flag-search') == 1) {
+        localStorage.setItem('Sortedproduct', JSON.stringify(productlist));
+    }
+    showdata();
+}
+
+
+function sortascendingbyname(){
+    let productlist;
+    if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
+        productlist = JSON.parse(localStorage.getItem('Allproduct'));
+    }
+    else if (localStorage.getItem('flag-search') == 1) {
+        productlist = JSON.parse(localStorage.getItem('Sortedproduct'));
+    }
+    productlist.sort((a, b) => {
+        return a.product_name.localeCompare(b.product_name);
+    });
+    if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
+        localStorage.setItem('Allproduct', JSON.stringify(productlist));
+    }
+    else if (localStorage.getItem('flag-search') == 1) {
+        localStorage.setItem('Sortedproduct', JSON.stringify(productlist));
+    }
+    showdata();
+}
+
+function sortdescendingbyname(){
+    let productlist;
+    if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
+        productlist = JSON.parse(localStorage.getItem('Allproduct'));
+    }
+    else if (localStorage.getItem('flag-search') == 1) {
+        productlist = JSON.parse(localStorage.getItem('Sortedproduct'));
+    }
+    productlist.sort((a, b) => {
+        return b.product_name.localeCompare(a.product_name);
     });
     if (localStorage.getItem('flag-search') == null || localStorage.getItem('flag-search') == 0) {
         localStorage.setItem('Allproduct', JSON.stringify(productlist));
