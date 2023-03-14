@@ -7,7 +7,7 @@ Steps to Run CRUD project:-
       
       cd CRUD
 
-      git checkout -b CRUD
+      git checkout CRUD
 
 2) Then open Index.js from js files in vs-code and open it with live server.After Adding items it will show as per below photos
 
